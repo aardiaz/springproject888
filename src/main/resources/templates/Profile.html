@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>profile</title>
+</head>
+
+<body>
+
+	<th:block th:insert="Header.html"></th:block>
+
+	<div class="container-fluid">
+
+		<div class="card">
+			<div class="card-header text-center text-white bg-primary">
+				<h5>User Profile Details</h5>
+			</div>
+
+			<div class="card-body">
+
+
+					<div class="row p-2">
+						<div class="col-4">
+							FirstName
+						</div>
+						<div class="col-6">
+							 [[${session.validuser.fname}]]
+						</div>
+					</div>
+					
+					<div class="row p-2">
+						<div class="col-4">
+							LastName
+						</div>
+						<div class="col-6">
+							 [[${session.validuser.lname}]]
+						</div>
+					</div>
+					
+					<div class="row p-2">
+						<div class="col-4">
+							UserName
+						</div>
+						<div class="col-6">
+							 [[${session.validuser.username}]]
+						</div>
+					</div>
+
+			</div>
+			<div class="card-footer text-center bg-warning ">
+				copyright@2024
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
